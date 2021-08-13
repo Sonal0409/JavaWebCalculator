@@ -4,11 +4,11 @@ pipeline{
         jdk 'myjava'
         maven 'mymaven'
     }
-    agent {label 'prod_server'}
+    agent any
     stages{
         stage('checkout'){
             steps{
-               git 'https://github.com/sonal04devops/JavaWebCalculator.git'
+               git 'https://github.com/Raghava510/JavaWebCalculator.git'
             }
         }
          stage('Compile'){
